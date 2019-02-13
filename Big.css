@@ -1,8 +1,30 @@
 body{
-    background-color: white;
+    background-color: lightgray;
     
 }
 li{
     display: inline;
     position: relative;
 }
+h1{
+    background-color: purple;
+    text-align: center;
+    text-size-adjust: 20px;
+
+}
+p{
+    background: rgb(0, 217, 255);
+    text-size-adjust: 10px;
+}
+h2{
+    background-color: purple;
+    text-align: center;
+    text-size-adjust: 20px;
+
+}
+embed{
+    margin: auto;
+    display: block;
+
+}
+
