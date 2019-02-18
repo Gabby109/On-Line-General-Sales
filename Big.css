@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: nowrap;
     flex-flow: column wrap;
-
 }
 
 #section {
@@ -57,6 +56,44 @@ li {
     margin: 20px;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width:959px) {
+    #page-wrapper {
+        width: 100%;
+    }
+    #section {
+        width: 50%;
+    }
+    #header {
+        width: 25%;
+    }
+    #video {
+        width: 5%;
+    }
+    #select {
+        width: 10%;
+    }
+    .call-out logo {
+        width: 100%;
+    }
+}
+@media screen and (max-width:640px) {
+
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    background-color: yellow;
+    font-size: 20px;
+}
+h5 {
+    background-color: yellow;
+    font-size: 20px;
+}
+h6 {
+    background-color: yellow;
+    font-size: 20px;
 }
 
 
