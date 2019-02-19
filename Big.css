@@ -35,6 +35,7 @@
 
 a {
     text-decoration: none; 
+    color: #000,
 }
 
 li {
@@ -46,36 +47,91 @@ li {
     margin-top: 30px;
 }
 #h1{
-    background-color: gray;
+    background-color: #eeee;
     text-align: center;
     height: 600px;
 }
-#select{
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pricing #tenor, #pricing #bass, #pricing #valve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  #pricing #tenor .level, #pricing #bass .level, #pricing #valve .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #pricing #tenor h2, #pricing #bass h2, #pricing #valve h2 {
+    margin-top: 15px;
+  }
+  #pricing #tenor ol, #pricing #bass ol, #pricing #valve ol {
+    margin: 15px 0;
+  }
+  #pricing #tenor ol li, #pricing #bass ol li, #pricing #valve ol li {
+    padding: 5px 0;
+  }
+  #pricing #tenor button, #pricing #bass button, #pricing #valve button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+  }
+  #pricing #tenor button:hover, #pricing #bass button:hover, #pricing #valve button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    #pricing #tenor, #pricing #bass, #pricing #valve {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer ul li {
+    padding: 0 10px;
+  }
+  footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+  
+#select {
     font-display: 30px;
     background-color: gray;
     margin: 20px;
     display: flex;
     justify-content: space-between;
-}
-@media screen and (max-width:959px) {
-    #page-wrapper {
-        width: 100%;
-    }
-    #section {
-        width: 50%;
-    }
-    #header {
-        width: 25%;
-    }
-    #video {
-        width: 5%;
-    }
-    #select {
-        width: 10%;
-    }
-    .call-out logo {
-        width: 100%;
-    }
 }
 @media screen and (max-width:640px) {
 
